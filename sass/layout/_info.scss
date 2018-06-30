@@ -1,0 +1,78 @@
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12rem;
+    height: 60rem;
+    
+    &__heading {
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+        
+        h1 {
+            text-align: center;
+            font-size: 4.6rem;
+            margin-top: 1.3rem;
+        }
+        
+        h3 {
+            text-align: center;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            color: lighten( gray, 35% );
+            margin-top: 7rem;
+        }
+        
+        p {
+            text-align: center;
+            width: 55%;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            line-height: 3rem;
+            color: lighten(black, 50%);
+        }
+        
+        button {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 1.8rem 4.2rem;
+            font-size: 1.2rem;
+            color: white;
+            border: none;
+            background-color: var(--color-main-brown);
+            text-transform: uppercase;
+        }
+    }
+    
+    &__photos {
+        flex: 1;
+        position: relative;
+    }
+}
+
+.bar {
+    height: 25rem;
+    width: 37rem;
+    position: absolute;
+    bottom: 0;
+    top: 25rem;
+    z-index: 5;
+}
+
+.blanket {
+    height: 31rem;
+    width: 33rem;
+    position: absolute;
+    top: 0;
+    left: 4rem;
+}
+
+.pool {
+    height: 42rem;
+    width: 40rem;
+    position: absolute;
+    top: 4rem;
+    left: 27rem;
+    z-index: 2;
+}

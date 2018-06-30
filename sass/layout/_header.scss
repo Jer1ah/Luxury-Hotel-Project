@@ -1,0 +1,93 @@
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url("../../img/hotel-door.jpg");
+    background-size: cover;
+}
+
+.navigation {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    
+    h1 {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    
+    &__list {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        width: 34rem;
+        margin-right: 1rem;
+        
+        &--item {
+            margin: 0 2px;
+            font-size: 1.5rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--color-main-gray);
+        }
+    }
+    
+    button {
+        margin-left: 1rem;
+        background-color: transparent;
+        color: var(--color-main-gray);
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+    }
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    margin-top: 25rem;
+    
+    h1 {
+       font-size: 6rem;
+        margin-bottom: 0;
+    }
+    
+    h3 {
+        font-size: 3rem;
+        margin-top: 1.5rem;
+    }
+    
+    button {
+        background-color: var(--color-main-brown);
+        padding: 1.8rem 4.2rem;
+        font-size: 1.5rem;
+        color: white;
+        border: none;
+        margin-top: 0;
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+    }
+}
+
+
+
+
+
+
+
+

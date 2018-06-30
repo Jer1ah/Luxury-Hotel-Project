@@ -1,0 +1,143 @@
+.rooms {
+    height: 100rem;
+    background-color: lighten(gray, 47%);
+    padding-bottom: 7rem;
+    
+    &__flex {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    
+    &__heading {
+        text-align: center;
+        padding: 1px;
+        
+        h1 {
+            font-size: 4.5rem;
+            margin-top: 0;
+            margin-bottom: 8rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin: 10rem auto 2rem;
+            color: lighten(black, 70%);
+        }
+    }
+    
+    &__info {
+        display: flex;
+        
+        img {
+            width: 2.5rem;
+        }
+        
+        figure {
+            width: 10rem;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            img {
+                display: inline;
+                height: 30px;
+            }
+            
+            p {
+               display: inline;
+                font-size: 1.2rem;
+                color: darken(gray, 20%);
+            }
+        }
+        
+        figure:last-child {
+            margin-left: 1.5rem;
+        }
+    }
+    
+    &__main {
+        flex: 1.2;
+        background-color: white;
+        border: 1px lightgray solid;
+        
+        &--img {
+            height: 40rem;
+            width: 100%;
+        }
+        
+        &--info {
+            width: 90%;
+            margin: auto;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: var(--color-main-brown);
+        }
+        
+        .description {
+            font-size: 1.5rem;
+            color: darken(gray, 20%);
+            margin: 3rem auto;
+        }
+        
+        button {
+            padding: 1.8rem 4.2rem;
+            color: white;
+            font-size: 1.5rem;
+            background-color: var(--color-main-brown);
+            border: none;
+            margin-bottom: 5rem;
+        }
+        
+    }
+    
+    &__side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 4rem;
+        
+        span {
+            padding: .5rem 1.5rem;
+            border: none;
+            background-color: gold;
+            color: white;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            position: absolute;
+            top: 86%;
+            left: 1.4rem;
+        }
+        
+        
+        &--div {
+            
+            &-one {
+                background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)),
+                                  url(../../img/side-room-1.jpg);
+                flex: 1;
+                background-size: cover;
+                margin-bottom: 4rem;
+                position: relative;
+            }
+            
+            &-two {
+                background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)),
+                                  url(../../img/side-room-2.jpg);;
+                flex: 1;
+                background-size: cover;
+                position: relative;
+            }
+        }
+    }
+}
+    
+    
+    
+    
+    
+    
