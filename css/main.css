@@ -49,13 +49,20 @@ header {
       font-size: 1.5rem; }
     .nav__list a {
       text-decoration: none;
-      color: var(--color-main-gray); }
+      color: #cccccc;
+      transition: color .5s; }
+    .nav__list a:hover {
+      color: white; }
   .nav button {
     margin-left: 1rem;
     background-color: transparent;
-    color: var(--color-main-gray);
+    color: #cccccc;
     padding: 1.5rem 2rem;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    transition: color .5s; }
+  .nav button:hover {
+    color: white;
+    cursor: pointer; }
 
 .heading {
   text-align: center;
@@ -75,7 +82,11 @@ header {
     border: none;
     margin-top: 0;
     text-transform: uppercase;
-    letter-spacing: .4rem; }
+    letter-spacing: .4rem;
+    transition: background-color .5s; }
+  .heading button:hover {
+    background-color: #d7bb8f;
+    cursor: pointer; }
 
 .info {
   display: flex;
@@ -112,7 +123,11 @@ header {
       color: white;
       border: none;
       background-color: var(--color-main-brown);
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      transition: background-color .5s; }
+    .info__heading button:hover {
+      background-color: #d7bb8f;
+      cursor: pointer; }
   .info__photos {
     flex: 1;
     position: relative; }
@@ -201,7 +216,11 @@ header {
       font-size: 1.5rem;
       background-color: var(--color-main-brown);
       border: none;
-      margin-bottom: 5rem; }
+      margin-bottom: 5rem;
+      transition: background-color .5s; }
+    .rooms__main button:hover {
+      background-color: #d7bb8f;
+      cursor: pointer; }
   .rooms__side {
     flex: 1;
     display: flex;
@@ -259,19 +278,108 @@ header {
   .blog__heading {
     text-align: center; }
     .blog__heading h1 {
-      font-size: 5rem; }
+      font-size: 5rem;
+      margin: 1rem auto 8rem; }
     .blog__heading h3 {
-      font-size: 2rem; }
+      font-size: 1.2rem;
+      color: #b3b3b3;
+      margin: 8rem auto 0; }
   .blog__blogs {
     width: 70%;
     margin: 0 auto; }
   .blog__list {
-    display: flex; }
+    display: flex;
+    margin-bottom: 10rem; }
     .blog__list--blog {
       flex: 1;
-      margin: 0 2rem; }
+      margin: 0 2rem;
+      background: white; }
+      .blog__list--blog--description {
+        width: 90%;
+        margin: 0 auto; }
+        .blog__list--blog--description h3 {
+          font-size: 1.2rem;
+          color: #b3b3b3;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #666666;
+          display: inline-block;
+          text-transform: uppercase;
+          letter-spacing: .2rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem; }
+        .blog__list--blog--description h1 {
+          font-size: 2.7rem;
+          color: var(--color-main-brown);
+          margin-top: 0; }
+        .blog__list--blog--description p {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          color: #666666;
+          margin-bottom: 2rem; }
+        .blog__list--blog--description button {
+          background-color: transparent;
+          color: var(--color-main-brown);
+          padding: 1.2rem 3.5rem;
+          font-size: 1.6rem;
+          border: 2px solid #c9a469;
+          margin-bottom: 5rem;
+          transition: background .5s; }
+          .blog__list--blog--description button:hover {
+            color: white;
+            background: var(--color-main-brown);
+            cursor: pointer; }
       .blog__list--blog img {
         width: 100%;
-        height: 20rem; }
+        height: 22rem; }
+
+.footer {
+  background-color: #f3f3f3;
+  padding: 1px;
+  margin: 0; }
+  .footer__info {
+    display: flex;
+    width: 70%;
+    margin: 5rem auto 2rem; }
+    .footer__info h3 {
+      font-size: 2rem;
+      color: gray; }
+    .footer__info h4 {
+      font-size: 1.5rem;
+      color: #4d4d4d; }
+    .footer__info a {
+      text-decoration: none;
+      color: #050505;
+      font-size: 1.9rem; }
+    .footer__info--phone {
+      flex: 1; }
+    .footer__info--contact {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .footer__info--contact h4 {
+        margin-top: 0; }
+      .footer__info--contact--icons {
+        text-decoration: none;
+        list-style: none;
+        padding: 0;
+        display: flex; }
+        .footer__info--contact--icons img {
+          height: 2.2rem;
+          width: 2.2rem; }
+      .footer__info--contact--icon:not(:first-child) {
+        margin-left: 2.5rem; }
+    .footer__info--email {
+      flex: 1; }
+      .footer__info--email input {
+        padding: .7rem;
+        width: 80%;
+        font-size: 1.5rem;
+        border: 1px solid gray; }
+  .footer__copyright {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #4d4d4d;
+    margin: 5rem 0; }
 
 /*-- COMPONENT FOLDER --*/

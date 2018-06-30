@@ -90,6 +90,12 @@
             background-color: var(--color-main-brown);
             border: none;
             margin-bottom: 5rem;
+            transition: background-color .5s;
+        }
+        
+        button:hover {
+            background-color: lighten(#c9a469, 10%);
+            cursor: pointer;
         }
         
     }

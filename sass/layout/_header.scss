@@ -44,16 +44,27 @@ header {
         
         a {
             text-decoration: none;
-            color: var(--color-main-gray);
+            color: darken(white, 20%);
+            transition: color .5s;
+        }
+        
+        a:hover {
+            color: white;
         }
     }
     
     button {
         margin-left: 1rem;
         background-color: transparent;
-        color: var(--color-main-gray);
+        color: darken(white, 20%);
         padding: 1.5rem 2rem;
         font-size: 1.6rem;
+        transition: color .5s;
+    }
+    
+    button:hover {
+        color: white;
+        cursor: pointer;
     }
 }
 
@@ -81,6 +92,12 @@ header {
         margin-top: 0;
         text-transform: uppercase;
         letter-spacing: .4rem;
+        transition: background-color .5s;
+    }
+    
+    button:hover {
+        background-color: lighten(#c9a469, 10%);
+        cursor: pointer;
     }
 }
 
