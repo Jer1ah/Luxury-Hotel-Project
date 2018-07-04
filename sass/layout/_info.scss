@@ -1,13 +1,14 @@
 .info {
     display: flex;
     flex-direction: row;
-    margin-top: 12rem;
+    padding-top: 10rem;
     height: 60rem;
     
     &__heading {
         flex: 1;
         justify-content: center;
         text-align: center;
+        margin-right: -10px;
         
         h1 {
             text-align: center;
@@ -51,34 +52,76 @@
         }
     }
     
-    &__photos {
+    &__photo {
         flex: 1;
-        position: relative;
+        margin-left: -10px;
+        
+        &--photo {
+            width: 70rem;
+            max-height: 70rem;
+        }
     }
 }
 
-.bar {
-    height: 25rem;
-    width: 37rem;
-    position: absolute;
-    bottom: 0;
-    top: 25rem;
-    z-index: 5;
+@media( max-width: 1100px ) {
+    
+    .info {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        
+        &__photo {
+            
+            &--photo {
+                width: 50rem;
+                height: 50rem;
+            }
+        }
+    }
 }
 
-.blanket {
-    height: 31rem;
-    width: 33rem;
-    position: absolute;
-    top: 0;
-    left: 4rem;
+
+@media( max-width: 880px ) {
+    
+    .info {
+        flex-direction: column;
+        height: 110rem;
+        justify-content: center;
+        align-content: center;
+        
+        &__photo {
+            margin-bottom: 10rem;
+        }
+        
+        &__heading {
+            
+        }
+    }
 }
 
-.pool {
-    height: 42rem;
-    width: 40rem;
-    position: absolute;
-    top: 4rem;
-    left: 27rem;
-    z-index: 2;
+@media( max-width: 460px ) {
+    
+    .info {
+        height: 100rem;
+        
+        &__photo {
+            margin-bottom: 0;
+            
+            &--photo {
+                height: 40rem;
+                width: 40rem;
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+

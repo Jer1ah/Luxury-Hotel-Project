@@ -141,6 +141,41 @@
         }
     }
 }
+
+
+
+/*-- MEDIA QUERIES --*/
+
+@media( max-width: 960px ) {
+    
+    .rooms{
+        
+        &__flex {
+            width: 90%;
+        }
+    }
+}
+
+
+@media( max-width: 750px ) {
+    
+    .rooms {
+        height: 185rem;
+        justify-content: center;
+        align-content: center;
+        
+        &__flex {
+            flex-direction: column;
+        }
+        
+        &__side {
+            height: 85rem;
+            justify-content: center;
+            margin-left: 0;
+            margin-top: 2rem;
+        }
+    }
+}
     
     
     

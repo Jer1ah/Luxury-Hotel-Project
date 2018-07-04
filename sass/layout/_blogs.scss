@@ -84,3 +84,71 @@
         }
     }
 }
+
+/*-- MEDIA QUERIES --*/
+
+@media( max-width: 1200px ) {
+    
+    .blog {
+        
+        &__blogs {
+            width: 85%;
+        }
+    }
+}
+
+
+@media( max-width: 990px ) {
+    
+    .blog__blogs {
+        width: 95%;
+    }
+    
+    .blog__list--blog {
+        margin: 1rem;
+    }
+}
+
+
+@media( max-width: 770px ) {
+    
+    .blog {
+        
+        &__list {
+            flex-direction: column;
+            width: 75%;
+            margin: auto;
+            margin-bottom: 5rem;
+            
+            img {
+                height: 30rem;
+            }
+        }
+    }
+}
+
+
+@media( max-width: 500px ) {
+    
+    .blog {
+        
+        &__heading {
+            
+            h1 {
+                font-size: 4rem;
+            }
+        }
+        
+        &__list {
+            width: 95%;
+        }
+    }
+}
+
+
+
+
+
+
+
+

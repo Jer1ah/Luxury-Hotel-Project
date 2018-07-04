@@ -26,3 +26,36 @@
         width: 50%;
     }
 }
+
+
+/*-- MEDIA QUERIES --*/
+
+@media( max-width: 900px ) {
+    
+    .bedroom {
+    
+    h1 {
+       font-size: 5rem; 
+    }
+  }
+}
+
+
+@media( max-width: 760px ) {
+    
+    .bedroom {
+        
+        h1 {
+            margin-top: 18rem;
+        }
+        
+        p {
+            width: 70%;
+        }
+    }
+}
+
+
+
+
+
