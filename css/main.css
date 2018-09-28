@@ -424,7 +424,7 @@ header {
   height: 65rem;
   margin: 0;
   padding: 1px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../../img/ocean.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/ocean.jpg");
   background-repeat: repeat;
   background-size: cover;
 }
